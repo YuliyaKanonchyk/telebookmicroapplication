@@ -1,0 +1,24 @@
+POST http://localhost:8081/api/teleBook
+Content-Type: application/json
+
+{
+  "city": {
+  "id" : 1
+  }
+}
+###
+POST http://localhost:8081/api/teleBook
+Content-Type: application/json
+
+{
+  "city": {
+    "id" : 2
+  }
+}
+###
+GET http://localhost:8081/api/teleBook/findAll
+###
+GET http://localhost:8081/api/teleBook/findTeleBookById/1
+###
+GET http://localhost:8081/api/teleBook/deleteTeleBookById/1
+###

@@ -1,0 +1,21 @@
+POST http://localhost:8090/api/v1/createOperator
+Content-Type: application/json
+api_key:4f347634-fa82-401b-a789-75303b926107
+role:Admin
+
+{
+  "operator": "Life"
+}
+###
+
+POST http://localhost:8090/api/v1/deleteOperator/1
+Content-Type: application/json
+api_key:4f347634-fa82-401b-a789-75303b926107
+role:Admin
+
+###
+
+POST http://localhost:8081/api/telOperator/deleteTelOperatorById/1
+Content-Type: application/json
+
+###

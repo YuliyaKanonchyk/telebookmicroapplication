@@ -1,0 +1,42 @@
+POST http://localhost:8080/api/v2/create/user
+Content-Type: application/json
+
+{
+  "login": "VasiaLogin",
+  "password": "12345678",
+  "firstName": "Vasia",
+  "lastName": "Pupkin",
+  "role": "ADMIN"
+}
+
+###
+
+POST http://localhost:8070/authResource/auth
+Content-Type: application/json
+
+{
+  "login": "VasiaLogin",
+  "password": "12345678",
+  "firstName": "Vasia",
+  "lastName": "Pupkin",
+  "role": "ADMIN"
+}
+
+###
+
+GET http://localhost:8070/authResource/checkIsAuth
+Content-Type: application/json
+Authorization: ef6b36a7-de8c-4e3f-a28d-55e7b1c59fa3
+
+###
+
+POST http://localhost:8080/api/v1/createCity
+Content-Type: application/json
+api_key:df84e444-6f58-47d6-8c6e-8f0ca89cc6e0
+role:Admin
+
+{
+  "city": "Brest"
+}
+
+###

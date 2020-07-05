@@ -1,0 +1,51 @@
+POST http://localhost:8081/api/telNum
+Content-Type: application/json
+
+{
+  "telNum": 1234567,
+  "telOperator": {
+    "id": 1
+  },
+  "abonent": {
+    "id": 1
+  }
+}
+###
+POST http://localhost:8081/api/telNum
+Content-Type: application/json
+
+{
+  "telNum": 2234967,
+  "telOperator": {
+    "id":1
+  },
+  "abonent": {
+    "id": 1
+  }
+}
+###
+POST http://localhost:8081/api/telNum
+Content-Type: application/json
+
+{
+  "telNum": 2994567,
+  "telOperator": {
+    "id": 1
+  },
+  "abonent": {
+    "id": 1
+  }
+}
+###
+GET http://localhost:8081/api/teleBook/findAll
+###
+GET http://localhost:8081/api/teleBook/findTelNumByAbonentId/1
+###
+GET http://localhost:8081/api/teleBook/findTelNumByTelOperatorId/1
+###
+GET http://localhost:8081/api/teleBook/findTelNumByTelNum/1234567
+###
+GET http://localhost:8081/api/teleBook/findTelNumById/1
+###
+POST http://localhost:8081/api/teleBook/deleteTelNumById/1
+###

@@ -1,0 +1,33 @@
+POST http://localhost:8081/api/city
+Content-Type: application/json
+
+{
+  "city": "minsk"
+}
+###
+POST http://localhost:8081/api/city
+Content-Type: application/json
+
+{
+  "city": "Brest"
+}
+###
+POST http://localhost:8081/api/city
+Content-Type: application/json
+
+{
+  "city": "Grodno"
+}
+###
+GET http://localhost:8081/api/city/findAll
+###
+GET http://localhost:8081/api/city/findCity/byId/1
+###
+GET http://localhost:8081/api/city/findCity/byTitle/Grodno
+###
+POST http://localhost:8081/api/city/deleteCityById/2
+###
+POST http://localhost:8081/api/city/updateCityTitleById/1
+###
+GET http://localhost:8081/api/city/findAll
+###

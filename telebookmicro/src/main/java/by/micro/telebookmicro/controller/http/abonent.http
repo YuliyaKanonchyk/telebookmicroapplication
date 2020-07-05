@@ -1,0 +1,67 @@
+POST http://localhost:8081/api/abonent
+Content-Type: application/json
+
+{
+  "name": "Vasia",
+  "surName": "Pupkin",
+  "teleBook": {
+    "id": 1
+  }
+}
+###
+POST http://localhost:8081/api/abonent
+Content-Type: application/json
+
+{
+  "name": "Fedia",
+  "surName": "Che",
+  "teleBook": {
+    "id": 3
+  },
+  "telNumList": [
+    1,
+    2
+  ]
+}
+###
+POST http://localhost:8081/api/abonent
+Content-Type: application/json
+
+{
+  "name": "Nikolai",
+  "surName": "Plushkin",
+  "teleBook": {
+    "id": 2
+  },
+  "telNumList": [
+    1,
+    2
+  ]
+}
+###
+GET http://localhost:8081/api/abonent/findAll
+###
+GET http://localhost:8081/api/abonent/findAbonent/byNameAndSurName/Vasia/Pupkin
+###
+GET http://localhost:8081/api/abonent/findAbonent/byId/2
+###
+POST http://localhost:8081/api/abonent/delete/byId/3
+###
+POST http://localhost:8081/api/abonent/delete/ByNameAndSurName/Nikolai/Plushkin
+###
+POST http://localhost:8081/api/abonent/updateAbonentById/name/1?newName=Boris
+###
+POST http://localhost:8081/api/abonent/updateAbonentById/surName/1?newSurname=Petrov
+###
+POST http://localhost:8081/api/abonent/updateAbonentById/teleBook/1?city=Grodno
+###
+POST http://localhost:8081/api/abonent/updateAbonentById/number/1
+Content-Type: application/json
+
+{
+  "telNum": 1234567,
+  "telOperator": {
+    "id": 1
+  }
+}
+###

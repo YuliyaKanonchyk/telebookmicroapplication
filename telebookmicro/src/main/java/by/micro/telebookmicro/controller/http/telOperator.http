@@ -1,0 +1,31 @@
+POST http://localhost:8081/api/telOperator
+Content-Type: application/json
+
+{
+  "operator":"life"
+}
+###
+POST http://localhost:8081/api/telOperator
+Content-Type: application/json
+
+{
+  "operator":"mtc"
+}
+###
+POST http://localhost:8081/api/telOperator
+Content-Type: application/json
+
+{
+  "operator":"a1"
+}
+###
+GET http://localhost:8081/api/findAll
+###
+GET http://localhost:8081/api/telOperator/findTelOperator/byId/2
+###
+GET http://localhost:8081/api/telOperator/findTelOperator/byName/a1
+###
+POST http://localhost:8081/api/telOperator/deleteTelOperatorById/2
+###
+POST http://localhost:8081/api/telOperator/updateTelOperatorById/3?name=velcome
+###

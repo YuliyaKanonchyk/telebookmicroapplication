@@ -1,0 +1,33 @@
+POST http://localhost:8080/api/v1/create/abonent
+Content-Type: application/json
+
+{
+  "name": "Vasia",
+  "surName": "Pupkin",
+  "telebookId": 1
+}
+
+###
+POST http://localhost:8080/api/v1/create/abonent
+Content-Type: application/json
+
+{
+  "name": "Vasia",
+  "surName": "Pupkin",
+  "telebookId": 1
+}
+
+###
+POST http://localhost:8080/api/v1/create/abonent
+Content-Type: application/json
+
+{
+  "name": "Vasia",
+  "surName": "Pupkin",
+  "telebookId": 1
+}
+
+###
+POST http://localhost:8080/api/v1/findAll/abonents
+
+###

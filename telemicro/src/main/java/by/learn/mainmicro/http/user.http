@@ -1,0 +1,22 @@
+POST http://localhost:8082/user/registration
+Content-Type: application/json
+
+{
+  "login": "VasiaLogi",
+  "password": "12345678",
+  "firstName": "Vasia",
+  "lastName": "Pupkin",
+  "role": "ADMIN"
+}
+###
+
+GET http://localhost:8082/user/login?login=VasiaLogi&password=12345678
+###
+GET http://localhost:8082/user/getUserBy/id/1
+###
+GET http://localhost:8082/user/getUserBy/login/VasiaLogi
+###
+GET http://localhost:8082/user/getUserBy/firstName/Vasia
+###
+GET http://localhost:8082/user/getUserBy/lastName/Pupki
+###
